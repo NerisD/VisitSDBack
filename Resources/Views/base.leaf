@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>#(title)</title>
+        <link rel="stylesheet" href="/css/frontend.css">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    </head>
+<body>
+    <header>
+        <a href="/" id="logo">
+            <img src="/images/drum-2.png">
+            <h1>#(title)</h1>
+        </a>
+ 
+        <nav id="navigation">
+            <a href="/">Home</a> &middot;
+            <a href="/addElement/">Ajouter Element</a> &middot;
+            <a href="#" onClick="javascript:about();">About</a>
+        </nav>
+    </header>
+
+    #import("content")
+
+<footer>
+  <div class="footer">
+    <p>VisitSD</p>
+    <p>Powered by Swift & Vapor</p>
+    <p>Made by #WeLoveSwift</p>
+  </div>
+</footer>
+
+<script src="/javascript/frontend.js"></script>
+
+</body>
+</html>

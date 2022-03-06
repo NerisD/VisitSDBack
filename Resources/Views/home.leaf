@@ -1,0 +1,10 @@
+#extend("base"):
+#export("content"):
+  <h1>Home Page Content</h1>
+  <h2>#(message)</h2>
+
+
+
+#endexport
+
+#endextend

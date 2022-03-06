@@ -1,0 +1,31 @@
+#extend("base"):
+#export("content"):
+
+<div class="formular">
+  <form method="post" action="/addElement" enctype="multipart/form-data">
+      <p>Titre: <input type="text" name="title" /></p>
+      <p>Catégorie :</p>
+      <select name="category" id="category">
+          <option value="sport">Sport</option>
+          <option value="marche">Marché</option>
+          <option value="art et culture">Art & Culture</option>
+          <option value="nature">Nature</option>
+      </select>
+      <p>Description: <input type="text" name="description" /></p>
+      <p>Latitude: <input type="text" name="latitude"></p>
+      <p>Longitude: <input type="text" name="longitude"></p>
+      <p>Doit Apparaitre en Découverte ? :</p>
+      <select name="decouverte" id="decouverte">
+          <option value="true">Oui</option>
+          <option value="false">Non</option>
+      </select>
+      <p>Image:</p>
+      <input type="file" id="avatar" name="data" accept="image/png, image/jpg">
+
+      </br>
+      <button type="submit" onClick="msg('#(message)')"">Ajouter</button>
+  </form>
+</div>
+#endexport
+
+#endextend
